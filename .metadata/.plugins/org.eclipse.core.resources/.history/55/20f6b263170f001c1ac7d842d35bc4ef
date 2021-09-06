@@ -1,0 +1,23 @@
+package week11;
+
+public class DicApp {
+	  public static void main(String[] args) {
+	    Scanner scanner = new Scanner(System.in);
+	    System.out.println("한영, 영한 단어 검색 프로그램(종료시 stop입력)");
+	    while(true) {
+	      System.out.print("찾을 단어? ");
+	      String kor = scanner.next();
+	      if(kor.equals("stop")) {
+	        System.out.println("프로그램을 종료합니다 !");
+		break;
+	      }
+	      String eng = Dictionary.convert(kor);
+	      if(eng == null)
+	        System.out.println(kor + "는 저의 사전에 없습니다.");
+	      else {
+	        System.out.println(kor + "은 " + eng);	
+	      }
+	  }	
+	  scanner.close();
+	  }
+	}

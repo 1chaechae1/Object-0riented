@@ -1,0 +1,37 @@
+package week13;
+
+class Point {
+	 private int x, y;
+	 Point() {
+		 this.x = this.y = 0;
+	 }
+	 Point(int x, int y) {
+		 this.x = x; this.y = y;
+	 }
+	 public void showPoint() {
+		 System.out.println("("+x+","+y+")");
+	 }
+}
+
+class ColorPoint extends Point {
+	private String color;	//점의 색
+	ColorPoint(int x, int y, String color) {
+		super(x,y);
+		this.color = color;
+	}
+	public void showColorPoint() {
+		System.out.print(color);
+		showPoint();
+	}
+}
+
+public class ColorPointEX1 {
+	public static void main(String[] args) {
+		Point p = new Point(1,2); // Point 객체 생성
+		p.showPoint();
+
+		ColorPoint cp = new ColorPoint(3,4,"red"); // ColorPoint 객체 
+		cp.showColorPoint(); // 컬러와 좌표 출력
+
+	}
+}

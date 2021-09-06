@@ -1,0 +1,21 @@
+package week11;
+
+class TV {
+	String brand;
+	int year;
+	int size;
+	
+	public TV(String b, int y, int s) {
+		this.brand = b;
+		year
+	}
+}
+
+public class TVTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

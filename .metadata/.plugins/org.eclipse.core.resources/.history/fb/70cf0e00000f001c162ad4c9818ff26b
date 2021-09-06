@@ -1,0 +1,33 @@
+package week11;
+class Box5 {
+  int width;
+  int height;
+  int depth;
+  public Box5()
+  {
+    /*this(1,1,1);*/
+    width = 1;
+    height = 1;
+    depth = 1;
+  }
+  public Box5(int w)
+  {
+    /*this(w,1,1);*/
+    width = w;
+    height = 1;
+    depth = 1;
+  }
+  public Box5(int w, int h)
+  {
+    /*this(w,h,1);*/
+    width = w;
+    height = h;
+    depth = 1;
+  }
+  public Box5(int w, int h, int d)
+  {
+    width = w;
+    height = h;
+    depth = d;
+  }
+}

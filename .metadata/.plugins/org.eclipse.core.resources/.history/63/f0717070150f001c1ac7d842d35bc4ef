@@ -1,0 +1,12 @@
+package week12;
+
+public class Test01 {
+	public static void main(String[] args) {
+		String s1 = args[0];
+		// 이곳에 두개의 정수형 변수를 받아드리는 코드를 작성하시오
+
+		TV myTV = new TV(s1, i1, i2);
+		myTV.show();
+	}
+
+}

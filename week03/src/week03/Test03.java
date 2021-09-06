@@ -1,0 +1,24 @@
+package week03;
+
+import java.util.Scanner;
+
+public class Test03 {
+	public static void main(String[] args) {
+		Scanner stdIn = new Scanner(System.in);
+		
+		System.out.print("첫 번째 수를 입력 : ");
+		double i = stdIn.nextDouble();
+		
+		System.out.print("두 번째 수를 입력 : ");
+		double d = stdIn.nextDouble();
+		
+		System.out.println("덧셈 : " + i + "+" + d + "=" + (i + d) + " 입니다."); 
+		System.out.println("뺄셈 : " + i + "-" + d + "=" + (i - d) + " 입니다."); 
+		System.out.println("곱셈 : " + i + "*" + d + "=" + (i * d) + " 입니다.");
+		System.out.println("나눗셈 : " + i + "/" + d + "=" + (i / d) + " 입니다.");
+		System.out.println("평균값 : " + ((i + d)/2) + " 입니다.");
+		stdIn.close();
+
+	}
+
+}

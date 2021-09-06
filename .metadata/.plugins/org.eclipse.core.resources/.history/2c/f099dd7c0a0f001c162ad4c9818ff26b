@@ -1,0 +1,27 @@
+package week11;
+class TV {
+	private String manufacturer;
+	private int year;
+	private int size;
+		
+	public TV(String m, int y, int s) {
+		manufacturer = m;
+		year = y;		
+		size = s;
+	}
+	
+	public void show() {
+		System.out.print(this.manufacturer + "에서 만든 ");
+		System.out.print(this.year + "년형 ");
+		System.out.println(this.size + "인치 TV");
+	}
+	
+	public class TVTest {
+	      public static void main(String[] args) {
+	         TV myTV = new TV("LG", 2019, 50);
+	         myTV.show();
+	         myTV = new TV("삼성", 2018, 55);
+	         myTV.show();
+	         
+	      }
+	   }

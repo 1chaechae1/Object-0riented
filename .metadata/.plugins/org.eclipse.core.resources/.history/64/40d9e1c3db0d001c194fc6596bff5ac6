@@ -1,0 +1,12 @@
+package week09;
+
+public class Test03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Point p = new Point();
+		p.setPoint(100,200);
+		p.print();
+	}
+
+}

@@ -1,0 +1,16 @@
+package week10;
+class Point {
+	int x, y;
+	
+	public void set(int p1, int p2)
+	{
+		x = x1;
+		y = y1;
+	}
+	
+	public void print()
+	{
+		System.out.println("("+x+", "+y+")");
+	}
+	
+}

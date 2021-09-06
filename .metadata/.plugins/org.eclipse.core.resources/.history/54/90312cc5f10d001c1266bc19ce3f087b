@@ -1,0 +1,54 @@
+package week14;
+abstract class Shape {
+	final double PI = 3.14;
+	abstract void draw(); // 도형을 그리는 추상 메소드
+	abstract double findArea(); // 도형의 면적을 리턴하는 추상 메소드
+}
+
+class Circle implements Shape {
+	private int radius; // 반지름
+	
+	public Circle(int radius) { 
+		this.radius = radius;
+	}
+	
+	@Override
+	public void draw() {
+		System.out.println("원을 그리다.");
+	}
+	
+	@Override
+	public double findArea() { 
+		return PI*radius*radius;
+	}
+}
+
+class Rect implements Shape {
+	private int width, height; // 가로와 세로
+	
+	public Rect(int width, int height) { 
+		this.width = width; this.height = height;
+	}
+	
+	@Override
+	public void draw() { 
+		System.out.println( "사각형을 그리다.");
+	}
+	
+	@Override
+	public double findArea() { 
+		return width*height;
+	}
+}
+
+public class AbstractClassDemo {
+	public static void main(String[] args) {
+		Shape c = new Circle(3);
+		c.draw();
+		System.out.println("원의 넓이는 "+ c.findArea());
+		Shape r = new Rect(3, 4);
+		r.draw();
+		System.out.println("사각형의 넓이는 "+r.findArea());
+	}
+}
+
